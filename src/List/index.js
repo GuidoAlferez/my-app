@@ -1,4 +1,5 @@
 import React from "react";
+import ListItem from "../LisItem";
 
 class List extends React.Component {
     constructor (){
@@ -29,12 +30,11 @@ class List extends React.Component {
             <ul className="list-group">
                 {this.state.items.map((item)=>{
                     return (
-                    <li className={`list-group-item ${item.actived ? 'actived': ''}`}>{item.text}</li>
+                        <ListItem texto={item.text}/>
                     )
                 })}
 
             </ul>
-          
         );
     }
 }

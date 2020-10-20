@@ -4,7 +4,7 @@ class Jumbotron extends React.Component {
     constructor (){
         super();
         this.state = {
-            jumbotron_title: "Jumbotron de G",
+            jumbotron_title: "Jumbotron de Guido",
             jumbotron_texto: "Textos: ",
             lista_de_Djs_Favoritos: ["Hardwell ","Quintino ","Mike Williams ","Blasterjaxx ","W&W ","Yellow Claw "],
             link:"link-copado"
