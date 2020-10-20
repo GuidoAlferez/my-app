@@ -1,0 +1,25 @@
+import React from "react";
+
+class Jumbotron extends React.Component {
+    constructor (){
+        super();
+        this.state = {
+            jumbotron_title: "Jumbotron de G",
+            jumbotron_texto: "Textos: ",
+            lista_de_Djs_Favoritos: ["Hardwell ","Quintino ","Mike Williams ","Blasterjaxx ","W&W ","Yellow Claw "],
+            link:"link-copado"
+        }
+    }
+    render() {
+        return (
+            <div className="jumbotron">
+                <h1 className="display-4">{this.state.jumbotron_title}</h1>
+                <p className="lead">{this.state.jumbotron_texto}</p>
+                <hr className="my-4" />
+                <p>{this.state.lista_de_Djs_Favoritos}</p>
+                <a className="btn btn-primary btn-lg" href={this.state.link} role="button">Learn more</a>
+            </div>
+        );
+    }
+}
+export default Jumbotron;
