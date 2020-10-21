@@ -1,10 +1,11 @@
 import React from "react";
+import Title from "../Title";
 
 class Jumbotron extends React.Component {
-    constructor (){
-        super();
+    constructor (props){
+        super(props);
         this.state = {
-            jumbotron_title: "Jumbotron de Guido",
+            title:this.props.titulo,
             jumbotron_texto: "Textos: ",
             lista_de_Djs_Favoritos: ["Hardwell ","Quintino ","Mike Williams ","Blasterjaxx ","W&W ","Yellow Claw "],
             link:"link-copado"
@@ -13,7 +14,7 @@ class Jumbotron extends React.Component {
     render() {
         return (
             <div className="jumbotron">
-                <h1 className="display-4">{this.state.jumbotron_title}</h1>
+                <Title title = {this.state.title}/>
                 <p className="lead">{this.state.jumbotron_texto}</p>
                 <hr className="my-4" />
                 <p>{this.state.lista_de_Djs_Favoritos}</p>
